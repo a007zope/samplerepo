@@ -6,6 +6,8 @@ public class String {
 		// TODO Auto-generated method stub
 
 		long  startTime = System.currentTimeMillis();
+		
+		
        StringBuffer a = new StringBuffer("Today is Wednesday");
 
 		a.append(" "+"Aditya"+" "+"Zope");

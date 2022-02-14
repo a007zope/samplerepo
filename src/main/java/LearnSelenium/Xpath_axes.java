@@ -2,13 +2,13 @@ package LearnSelenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Xpath_axes {
+public class Xpath_axes 
 
+{
 	public static void main(String[] args) throws InterruptedException {
 
 		// input[@class='form-control']//following::input[@class='form-control']
@@ -46,9 +46,9 @@ public class Xpath_axes {
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("(//i[@class=\"espn-icon icon-caret-down-solid-after icon-xl header-icon\"])[1]")).click();
-		String batsmanName = driver.findElement(By.xpath("(//div[@id=\"__next\"]//a[@target=\"_self\" and text()=\"KL Rahul\"])[1]")).getText();
+		//	String batsmanName = driver.findElement(By.xpath("(//div[@id=\"__next\"]//a[@target=\"_self\" and text()=\"KL Rahul\"])[1]")).getText();
 		//System.out.println(batsmanName);
-		String batsmanInfo = driver.findElement(By.xpath("//table[@class=\"table batsman\"]//a[text()=\"KL Rahul\"]/following::td")).getText();
+		//String batsmanInfo = driver.findElement(By.xpath("//table[@class=\"table batsman\"]//a[text()=\"KL Rahul\"]/following::td")).getText();
 		//System.out.println(batsmanInfo);
 
 		// String text=driver.findElement(By.xpath("(//table[@class=\"table
@@ -63,14 +63,19 @@ public class Xpath_axes {
 
 	}
 
+	private String getScoreCard(WebDriver driver, java.lang.String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	public String getScoreCard(WebDriver driver, String cricName) {
 
 		//String batsmanInfo = driver.findElement(By.xpath("(//table[@class=\"table batsman\"])[1]//td/following::td")).getText(); '"+i+"'
 
 		for (int i = 1; i <= 7;i++) {
 
-			String t =driver.findElement(By.xpath("(//table[@class=\"table batsman\"]//a[contains(text(),'"+ cricName + "')]/following::td)["+i+"]")).getText();
-			System.out.print(" "+t);
+			//String t =driver.findElement(By.xpath("(//table[@class=\"table batsman\"]//a[contains(text(),'"+ cricName + "')]/following::td)["+i+"]")).getText();
+			//System.out.print(" "+t);
 			//System.out.println("Execution Successful");
 
 		}

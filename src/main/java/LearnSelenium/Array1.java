@@ -5,6 +5,7 @@ public class Array1 {
 	
 	int []a1 = new int[4];
 
+
 public static void main(String[] args) {
 
 

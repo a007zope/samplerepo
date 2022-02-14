@@ -62,7 +62,7 @@ public class Login {
 		Boolean t=wait.until(ExpectedConditions.titleContains(title));
 		if(t.equals(true))
 		{
-		
+
 		}
 
 		return title;
