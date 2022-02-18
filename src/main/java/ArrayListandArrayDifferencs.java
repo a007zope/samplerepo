@@ -7,11 +7,12 @@ public class ArrayListandArrayDifferencs {
 
 		ArrayList<Egg> myList = new ArrayList<Egg>();
 		Egg s = new Egg();
-
+		Egg l = new Egg();
 
 		Egg b = new Egg();
 		myList.add(s);
 		myList.add(b);
+		myList.add(l);
 		for(int i =0;i<myList.size();i++)
 		{
 			System.out.println(myList.get(i));
@@ -38,8 +39,7 @@ public class ArrayListandArrayDifferencs {
 		int i =0;
 		do {
 			System.out.println(myList.get(i));
-			i++;
-		
+			i++;		
 		} 
 		while (i<myList.size());
 
